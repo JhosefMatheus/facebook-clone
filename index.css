@@ -1,0 +1,132 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.logo-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-side > img {
+    width: 350px;
+}
+
+.logo-side > p {
+    max-width: 350px;
+    font-size: 28px;
+}
+
+.form-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-side > .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+input[type=email], input[type=password] {
+    width: 350px;
+    margin: 5px;
+    font-size: 18px;
+    padding: 13px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+}
+
+input[type=email]::placeholder, input[type=password]::placeholder {
+    color: rgb(156, 151, 151);
+}
+
+input[type=email]:focus, input[type=password]:focus {
+    outline: 1px solid #1877f2;
+}
+
+input[type=email]:focus::placeholder, input[type=password]:focus::placeholder {
+    color: rgb(196, 190, 190);
+}
+
+.login-button {
+    background-color: #1877f2;
+    border: none;
+    width: 375px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #166fe5;
+}
+
+.form > a {
+    color: #1877f2;
+    font-size: 14px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.form > a:hover {
+    text-decoration: underline;
+}
+
+.form hr {
+    width: 380px;
+    border-top: 1px solid #dddfe2;
+    margin: 0 0 20px 0;
+}
+
+.create-account-button {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    background-color: #36a420;
+}
+
+.form-side > p {
+    font-size: 14px;
+}
+
+.form-side > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.form-side > p > a:hover {
+    text-decoration: underline;
+}
