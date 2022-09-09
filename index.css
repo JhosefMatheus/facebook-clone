@@ -25,6 +25,7 @@ body {
 .logo-side > p {
     max-width: 350px;
     font-size: 28px;
+    text-align: center;
 }
 
 .form-side {
@@ -46,25 +47,58 @@ body {
     border-radius: 10px;
 }
 
-input[type=email], input[type=password] {
+.form > input[type=email] {
     width: 350px;
-    margin: 5px;
+    margin: 5px 5px 10px 5px;
     font-size: 18px;
     padding: 13px;
     border: 1px solid #dddfe2;
     border-radius: 5px;
 }
 
-input[type=email]::placeholder, input[type=password]::placeholder {
+.form > input[type=email]::placeholder {
     color: rgb(156, 151, 151);
 }
 
-input[type=email]:focus, input[type=password]:focus {
+.form > input[type=email]:focus {
     outline: 1px solid #1877f2;
 }
 
-input[type=email]:focus::placeholder, input[type=password]:focus::placeholder {
+.form > input[type=email]:focus::placeholder {
     color: rgb(196, 190, 190);
+}
+
+.password-field {
+    width: 378px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-field > input {
+    width: 325px;
+    height: 10px;
+    margin: 5px;
+    font-size: 18px;
+    padding: 13px 13px 13px 8px;
+    border: none;
+}
+
+.password-field > input:focus {
+    outline: none;
+}
+
+.password-field > input:focus::placeholder {
+    color: rgb(196, 190, 190);
+}
+
+.password-field > img {
+    width: 20px;
+    margin: 5px;
+    cursor: pointer;
+    display: none;
 }
 
 .login-button {
@@ -129,4 +163,42 @@ input[type=email]:focus::placeholder, input[type=password]:focus::placeholder {
 
 .form-side > p > a:hover {
     text-decoration: underline;
+}
+
+.register-dialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.register-dialog > .register-content {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+
+.register-dialog > .register-content > .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #dddfe2;
+}
+
+.register-dialog > .register-content > .header > .header-text > .title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.register-dialog > .register-content > .header > .header-text > .subtitle {
+    font-size: 15px;
+    color: #606770;
+}
+
+.register-dialog > .register-content > .header > .header-options > #close-register-button {
+    cursor: pointer;
 }
