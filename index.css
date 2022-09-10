@@ -202,3 +202,166 @@ body {
 .register-dialog > .register-content > .header > .header-options > #close-register-button {
     cursor: pointer;
 }
+
+.register-dialog > .register-content > .fields .register-field:focus {
+    outline: #dddfe2;
+}
+
+.register-dialog > .register-content > .fields > .name-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-dialog > .register-content > .fields > .name-fields > .register-field {
+    width: 250px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.register-dialog > .register-content > .fields > .credential-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-dialog > .register-content > .fields > .credential-fields > .register-field {
+    width: 457px;
+    height: 15px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    font-size: 15px;
+}
+
+.register-dialog > .register-content > .fields > .date-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-dialog > .register-content > .fields > .date-fields > .description {
+    width: 500px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.register-dialog > .register-content > .fields > .date-fields > .description > p {
+    font-size: 12px;
+    color: #606770;
+    margin-right: 5px;
+}
+
+.register-dialog > .register-content > .fields > .date-fields > .description > img {
+    width: 12px;
+    cursor: pointer;
+}
+
+.register-dialog > .register-content > .fields > .date-fields > .fields {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.register-dialog > .register-content > .fields > .date-fields > .fields > select {
+    width: 150px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+}
+
+.register-dialog > .register-content > .fields > .date-fields > .fields > select:focus {
+    outline: #dddfe2;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .description {
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .description > p {
+    font-size: 12px;
+    color: #606770;
+    margin-right: 5px;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .description > img {
+    width: 12px;
+    cursor: pointer;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .fields {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .fields > .gender-option {
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .fields > .gender-option > label {
+    margin-right: 22px;
+}
+
+.register-dialog > .register-content > p {
+    max-width: 480px;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.register-dialog > .register-content > p > a {
+    text-decoration: none;
+    color: #166fe5;
+}
+
+.register-dialog > .register-content > p > a:hover {
+    text-decoration: underline;
+}
+
+.register-dialog > .register-content > .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-dialog > .register-content > .options > button {
+    width: 215px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #42b72a;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-dialog > .register-content > .options > button:hover {
+    background-color: #36a420;
+}

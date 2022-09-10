@@ -9,9 +9,19 @@ const eyeClosed = document.getElementById("eye-closed");
 
 // registerDialog components
 
+const days = [];
+const years = [];
+
+function setDays(daysArray) {
+    for (let i = 1; i <= 31; i++) {
+        daysArray.push(i);
+    }
+}
+
 const registerButton = document.getElementById("create-account-button");
 const registerDialog = document.getElementById("register-dialog");
 const closeRegisterButton = document.getElementById("close-register-button");
+const confirmRegisterButton = document.getElementById("confirm-register-button");
 
 // password actions
 
@@ -60,5 +70,9 @@ registerButton.onclick = () => {
 }
 
 closeRegisterButton.onclick = () => {
+    registerDialog.style.display = "none";
+}
+
+confirmRegisterButton.onclick = () => {
     registerDialog.style.display = "none";
 }

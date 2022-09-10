@@ -32,15 +32,71 @@
         <div class="register-content">
             <div class="header">
                 <div class="header-text">
-                    <p class="title">Cabeçalho</p>
-                    <p class="subtitle">Cabeçalho</p>
+                    <p class="title">Cadastre-se</p>
+                    <p class="subtitle">É rápido e fácil.</p>
                 </div>
                 <div class="header-options">
                     <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png" id="close-register-button">
                 </div>
             </div>
             <div class="fields">
-    
+                <div class="name-fields">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" class="register-field">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="register-field">
+                </div>
+                <div class="credential-fields">
+                    <input type="email" name="email" id="email" placeholder="Celular ou email" class="register-field">
+                    <input type="password" name="password" id="password" placeholder="Nova senha" class="register-field">
+                </div>
+                <div class="date-fields">
+                    <div class="description">
+                        <p>Data de nascimento</p>
+                        <img src="assets/question-mark.svg" />
+                    </div>
+                    <div class="fields">
+                        <select name="day" id="day"></select>
+                        <select name="month" id="month">
+                            <option value="janeiro">Janeiro</option>
+                            <option value="fevereiro">Fevereiro</option>
+                            <option value="março">Março</option>
+                            <option value="abril">Abril</option>
+                            <option value="maio">Maio</option>
+                            <option value="junho">Junho</option>
+                            <option value="julho">Julho</option>
+                            <option value="agosto">Agosto</option>
+                            <option value="setembro">Setembro</option>
+                            <option value="outubro">Outubro</option>
+                            <option value="novembro">Novembro</option>
+                            <option value="dezembro">Dezembro</option>
+                        </select>
+                        <select name="year" id="year"></select>
+                    </div>
+                </div>
+                <div class="gender-fields">
+                    <div class="description">
+                        <p>Gênero</p>
+                        <img src="assets/question-mark.svg" />
+                    </div>
+                    <div class="fields">
+                        <div class="gender-option">
+                            <label for="feminino">Feminino</label>
+                            <input type="radio" name="female" id="female" value="feminino">
+                        </div>
+                        <div class="gender-option">
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" name="male" id="male" value="masculino">
+                        </div>
+                        <div class="gender-option">
+                            <label for="personalizado">Personalizado</label>
+                            <input type="radio" name="personalized" id="personalized" value="personalizado">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>As pessoas que usam nosso serviço podem ter carregado suas informações de contato no Facebook. <a href="#">Saiba mais.</a></p>
+            <p>Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos</a>, <a href="#">Política de Privacidade</a> e <a href="#">Política de Cookies</a>. Você poderá receber notificações por SMS e cancelar isso quando quiser.</p>
+            <div class="options">
+                <button id="confirm-register-button">Cadastre-se</button>
             </div>
         </div>
     </div>
