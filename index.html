@@ -41,12 +41,24 @@
             </div>
             <div class="fields">
                 <div class="name-fields">
-                    <input type="text" name="nome" id="nome" placeholder="Nome" class="register-field">
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="register-field">
+                    <div class="register-field" id="name-field">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" />
+                        <img src="assets/alert.ico" id="name-field-error-image"/>
+                    </div>
+                    <div class="register-field" id="sobrenome-field">
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" />
+                        <img src="assets/alert.ico" id="sobrenome-field-error-image"/>
+                    </div>
                 </div>
                 <div class="credential-fields">
-                    <input type="email" name="email" id="email" placeholder="Celular ou email" class="register-field">
-                    <input type="password" name="password" id="password" placeholder="Nova senha" class="register-field">
+                    <div class="register-field" id="email-field">
+                        <input type="email" name="email" id="email" placeholder="Celular ou email" />
+                        <img src="assets/alert.ico" id="email-field-error-image"/>
+                    </div>
+                    <div class="register-field" id="password-register-field">
+                        <input type="password" name="password" id="password" placeholder="Nova senha" />
+                        <img src="assets/alert.ico" id="password-register-field-error-image"/>
+                    </div>
                 </div>
                 <div class="date-fields">
                     <div class="description">
@@ -54,8 +66,8 @@
                         <img src="assets/question-mark.svg" />
                     </div>
                     <div class="fields">
-                        <select name="day" id="day"></select>
-                        <select name="month" id="month">
+                        <select name="day" id="day-option"></select>
+                        <select name="month" id="month-option">
                             <option value="janeiro">Janeiro</option>
                             <option value="fevereiro">Fevereiro</option>
                             <option value="março">Março</option>
@@ -69,7 +81,7 @@
                             <option value="novembro">Novembro</option>
                             <option value="dezembro">Dezembro</option>
                         </select>
-                        <select name="year" id="year"></select>
+                        <select name="year" id="year-option" ></select>
                     </div>
                 </div>
                 <div class="gender-fields">
@@ -90,6 +102,16 @@
                             <label for="personalizado">Personalizado</label>
                             <input type="radio" name="personalized" id="personalized" value="personalizado">
                         </div>
+                    </div>
+                    <div class="more-fields" id="more-fields">
+                        <select name="pronome" id="pronome-option">
+                            <option value="" selected disabled>Selecione seu pronome</option>
+                            <option value="feminino">Feminino: "Deseje a ela um feliz aniversário!"</option>
+                            <option value="masculino">Masculino "Deseje a ele um feliz aniversário!"</option>
+                            <option value="neutro">Neutro: "Deseje a ele(a) um feliz aniversário!"</option>
+                        </select>
+                        <p>Seu pronome fica visível para todos.</p>
+                        <input type="text" placeholder="Gênero (opcional)" />
                     </div>
                 </div>
             </div>

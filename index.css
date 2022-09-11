@@ -172,6 +172,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, .8);
+    overflow: auto;
+    padding-top: 50px;
 }
 
 .register-dialog > .register-content {
@@ -180,6 +182,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    margin-bottom: 60px;
 }
 
 .register-dialog > .register-content > .header {
@@ -190,21 +193,20 @@ body {
 }
 
 .register-dialog > .register-content > .header > .header-text > .title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 32px;
     font-weight: bold;
 }
 
 .register-dialog > .register-content > .header > .header-text > .subtitle {
+    margin-top: 0;
     font-size: 15px;
     color: #606770;
 }
 
 .register-dialog > .register-content > .header > .header-options > #close-register-button {
     cursor: pointer;
-}
-
-.register-dialog > .register-content > .fields .register-field:focus {
-    outline: #dddfe2;
 }
 
 .register-dialog > .register-content > .fields > .name-fields {
@@ -214,13 +216,28 @@ body {
 }
 
 .register-dialog > .register-content > .fields > .name-fields > .register-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 250px;
-    height: 15px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #dddfe2;
-    font-size: 15px;
     margin: 10px;
+}
+
+.register-dialog > .register-content > .fields > .name-fields > .register-field > input {
+    font-size: 15px;
+    width: 175px;
+    border: none;
+}
+
+.register-dialog > .register-content > .fields > .name-fields > .register-field > input:focus {
+    outline: none;
+}
+
+.register-dialog > .register-content > .fields > .name-fields > .register-field > img {
+    display: none;
 }
 
 .register-dialog > .register-content > .fields > .credential-fields {
@@ -231,13 +248,28 @@ body {
 }
 
 .register-dialog > .register-content > .fields > .credential-fields > .register-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 457px;
-    height: 15px;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid #dddfe2;
+}
+
+.register-dialog > .register-content > .fields > .credential-fields > .register-field > input {
+    width: 415px;
     font-size: 15px;
+    border: none;
+}
+
+.register-dialog > .register-content > .fields > .credential-fields > .register-field > input:focus {
+    outline: none;
+}
+
+.register-dialog > .register-content > .fields > .credential-fields > .register-field > img {
+    display: none;
 }
 
 .register-dialog > .register-content > .fields > .date-fields {
@@ -327,6 +359,46 @@ body {
 
 .register-dialog > .register-content > .fields > .gender-fields > .fields > .gender-option > label {
     margin-right: 22px;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .more-fields {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .more-fields > select {
+    width: 475px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    background-color: #fff;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .more-fields > select:focus {
+    outline: none;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .more-fields > p {
+    font-size: 12px;
+    color: #606770;
+    width: 500px;
+    margin-left: 25px;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .more-fields > input {
+    width: 450px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+}
+
+.register-dialog > .register-content > .fields > .gender-fields > .more-fields > input:focus {
+    outline: none;
 }
 
 .register-dialog > .register-content > p {
